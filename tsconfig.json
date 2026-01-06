@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "rootDir": ".",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "types": ["node", "@playwright/test"],
+        "baseUrl": "./src",
+        "paths": {
+            "@pages/*": ["pages/*"],
+            "@utils/*": ["utils/*"],
+            "@support/*": ["support/*"],
+            "@data/*": ["data/*"]
+        }
+    },
+    "include": ["src/**/*.ts", "src/**/*.spec.ts"],
+    "exclude": ["node_modules", "dist"]
+}

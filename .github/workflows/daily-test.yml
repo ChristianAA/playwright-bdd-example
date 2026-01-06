@@ -17,15 +17,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '24'
 
       - name: Install dependencies
         run: |
           npm install
           npx playwright install
           npx playwright install-deps
-          # Dependencias extra si las necesitas
-          npm install playwright-extra puppeteer-extra-plugin-stealth
 
       - name: Run Playwright tests (headless)
         run: npm run test

@@ -1,9 +1,17 @@
-# Dependency directories
-node_modules/
+# OS
+.DS_Store
+Thumbs.db
 
-# VSCode
+# IDE
 .vscode/
+.idea/
 
-# Project
+# Dependencies
+node_modules/
 package-lock.json
-results/
+
+# Test results
+**/.features-gen/
+**/playwright-report/
+**/results/
+**/test-results/
