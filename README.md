@@ -1,9 +1,8 @@
-[![Daily Playwright Tests](https://github.com/ChristianAA/playwright-cucumber-example/actions/workflows/daily-test.yml/badge.svg)](https://github.com/ChristianAA/playwright-cucumber-example/actions/workflows/daily-test.yml)
+[![Daily Playwright Tests](https://github.com/ChristianAA/playwright-bdd-example/actions/workflows/daily-test.yml/badge.svg)](https://github.com/ChristianAA/playwright-bdd-example/actions/workflows/daily-test.yml)
 
+# Playwright + playwright-bdd + Typescript Example
 
-# Playwright + Cucumber Example
-
-This repository contains the base setup of an UI testing project, using Playwright + Cucumber
+This repository contains the base setup of an UI testing project, using Playwright + playwright-bdd + Typescript
 
 A simple search in DuckDuckGo to check that results are displayed is used as example
 
@@ -11,8 +10,8 @@ A simple search in DuckDuckGo to check that results are displayed is used as exa
 
 The minimum requirements are:
 
-* node v18.16
-* npm 9.5.1
+- node 24.11.0
+- npm 11.6.1
 
 # Setup
 
@@ -34,6 +33,8 @@ To run the tests in headless mode, go to main directory and execute:
 npm run test
 ```
 
+Check other execution options in the "scripts" section of the "package.json" file.
+
 # Results
 
 Once the execution (only with 'npm run test') has finished:
@@ -43,7 +44,7 @@ A cucumber report will be generated in the '/results/cucumber-report.json' file.
 An html report will also be generated in the '/results/cucumber-report.html' file.
 
 # Links
-    
-[PlayWright](<https://playwright.dev/>)
 
-[Cucumber](<https://cucumber.io/docs/installation/javascript>)
+- [Playwright](https://playwright.dev/)
+- [Playwright BDD](https://vitalets.github.io/playwright-bdd/#/)
+- [Cucumber/Gherkin](https://cucumber.io/docs/gherkin/)

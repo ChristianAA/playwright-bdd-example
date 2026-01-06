@@ -1,20 +1,29 @@
 {
-  "name": "playwright-cucumber-example",
-  "version": "1.1.0",
-  "description": "Playwright + Cucumber + Javascript example project",
-  "author": "ChristianAA",
-  "license": "MIT",
-  "main": "index.js",
-  "type": "commonjs",
-"scripts": {
-    "test": "npx cucumber-js test"
-  },
-  "keywords": [],
-  "devDependencies": {
-    "@cucumber/cucumber": "11.3.0",
-    "@playwright/test": "1.54.2",
-    "playwright": "1.54.2",
-    "playwright-extra": "4.3.6",
-    "puppeteer-extra-plugin-stealth": "2.11.2"
-  }
+    "name": "playwright-bdd-example",
+    "version": "2.0.0",
+    "description": "Playwright + playwright-bdd + Javascript example project",
+    "author": "ChristianAA",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "test": "bddgen && playwright test",
+        "test:headed": "bddgen && playwright test --headed",
+        "test:ui": "bddgen && playwright test --ui",
+        "test:tag": "bddgen && playwright test --grep 'api'",
+        "test:debug": "bddgen && playwright test --debug",
+        "report": "playwright show-report results/playwright-report",
+        "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+        "generate:types": "node scripts/generate-pages-types.js",
+        "clean": "node scripts/clean.js",
+        "clean:all": "npm run clean && rm -rf node_modules packages/*/node_modules"
+    },
+    "dependencies": {
+        "@playwright/test": "1.56.1",
+        "@types/node": "24.10.1",
+        "playwright-bdd": "8.4.1",
+        "typescript": "5.9.3",
+        "prettier": "3.6.2",
+        "playwright-extra": "4.3.6",
+        "puppeteer-extra-plugin-stealth": "2.11.2"
+    }
 }
