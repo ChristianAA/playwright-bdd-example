@@ -39,9 +39,9 @@ Check other execution options in the "scripts" section of the "package.json" fil
 
 Once the execution (only with 'npm run test') has finished:
 
-A cucumber report will be generated in the '/results/cucumber-report.json' file.
+A cucumber report will be generated in the '/results/playwright-report.json' file.
 
-An html report will also be generated in the '/results/cucumber-report.html' file.
+An html report will also be generated in the '/results/playwright-report.html' file.
 
 # Links
 
